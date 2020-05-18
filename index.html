@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Cores - IGTI BOOTCAMP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div align="center" class='structure'>
+        <h1>Gerenciador de Cores</h1>
+
+        <p>
+            (R) Vermelho:
+            <input type="range" class="inputRange" value=0 min=0 max=255
+                oninput="red.value=value" onchange="red.value=value, changeColor()">
+            <input type="text" class="inputText" value=0 readonly id="red">
+        </p>
+        <p>
+            (G) Verde:
+            <input type="range" class="inputRange" value=0 min=0 max=255
+                oninput="green.value=value" onchange="green.value=value, changeColor()">
+            <input type="text" class="inputText" value=0 readonly id="green">
+
+        </p>
+        <p>
+            (B) Azul:
+            <input type="range" class="inputRange" value=0 min=0 max=255
+                oninput="blue.value=value" onchange="blue.value=value, changeColor()">
+            <input type="text" class="inputText" value=0 readonly id="blue">
+        </p>
+
+        <div class="square" id="colorSelector"></div>
+    </div>
+
+</body>
+
+</html>
