@@ -1,0 +1,4 @@
+Diferença class e ID
+
+Id possui apenas um identificador e não pode ser utilizado
+Class - é o contrário. :P

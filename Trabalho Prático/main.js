@@ -5,3 +5,4 @@ function changeColor(){
     
     document.getElementById('colorSelector').style.backgroundColor = `rgb(${red},${green},${blue})`
 }
+
