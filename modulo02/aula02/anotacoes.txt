@@ -1,0 +1,20 @@
+Aula 2.1.3 NodeJS
+
+    NodeJS surgiu para que solucionasse o problema de arquiteturas bloqueantes
+    Ou seja, arquiteturas bloqueantes são aquelas que recebem determinadas requisições
+    e bloqueiam a execução, pois a execução acontece de forma síncrona.
+    
+    Trava o processo de I/O do servidor. 
+
+    NodeJS - Assincronismo
+
+    O nodejs foi criado utilizando o V8, motor de javascript do Google Chrome (ou seja, muito bom! haha)
+    
+    NodeJS possui uma arquitetura não bloqueante
+
+
+Event Loop? O que é o event loop?
+
+    Baseado em eventos, tudo que acontece como eventos
+
+

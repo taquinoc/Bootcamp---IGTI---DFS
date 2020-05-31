@@ -1,0 +1,26 @@
+Aula 1.1 - Backend vs Frontend
+
+Diferença:
+    Backend e Frontend
+
+O backend fica na parte do servidor, focado onde a aplicação funciona. Server-side:
+Frontend parte do usuário - Client Side.
+
+Aplicações com Server side rendering e Client side rendering:
+    Server side rendering são aplicações que são montadas pelo servidor e exibidas ao usuário.
+    Client side rendering aplicações montadas pelo lado do cliente, frameworks como ReactJS, Angular e Vue.
+
+Aula 1.2 - APIs 
+
+    Application Programming Interface.
+    Uma API pode ser considerada como um conjunto de serviços que pode ser disponibilizado
+para parceiros e clientes. 
+    Empresas adotam a criação de APIs porque fica mais fácil de fazer integrações.
+
+    URI (interface de utilização de serviço) pode ser visto como um contrato ou então
+    a maneira de como usa. Ou seja, URIs são conhecidas como ENDPOINT.
+
+
+
+
+
