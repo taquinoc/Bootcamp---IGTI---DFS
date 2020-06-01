@@ -98,22 +98,25 @@ statesJson.forEach((state, index) => {
 
 const checkLengthNameAndOrderByAlphabetic = (dataStatesAndCities) => {
     const allCitiesAndName = []
-    dataStatesAndCities.forEach(allCities => {
+    dataStatesAndCities.forEach((allCities, index) => {
         allCities.cities.forEach(eachCities => {
             let citiesParsed = JSON.parse(eachCities)
 
-            allCitiesAndName.push({UF: allCities.state, nameLength: citiesParsed.Nome.length, name: citiesParsed.Nome })
+            allCitiesAndName.splice(index, 0, {UF: allCities.state, nameLength: citiesParsed.Nome.length, name: citiesParsed.Nome })
         })
     })
 
-    const sorteddCitiesNames =  allCitiesAndName.sort(function(a,b) {
+    const sortedCitiesName =  allCitiesAndName.sort(function(a,b) {
         return b.nameLength - a.nameLength
     })
 
-    sorteddCitiesNames.forEach(element =>{
+
+    return allCitiesAndName
+
+    // sortedCitiesName.forEach(element =>{
         
-    })
-    return  filteredCitiesNames
+    // })
+    // return  sortedCitiesName
 }
 
 console.log(checkLengthNameAndOrderByAlphabetic(statesCities))
