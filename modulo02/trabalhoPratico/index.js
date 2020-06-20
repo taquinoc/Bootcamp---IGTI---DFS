@@ -10,9 +10,9 @@ const citiesJson = require('./files/Cidades.json')
 
 const statesCities = []
 statesJson.forEach((state, index) => {
-    statesCities.push({id: state.ID, state: state.Sigla, cities: []})
+    statesCities.push({ id: state.ID, state: state.Sigla, cities: [] })
     citiesJson.forEach(city => {
-        if(state.ID === city.Estado){
+        if (state.ID === city.Estado) {
             statesCities[index].cities.push(JSON.stringify(city))
         }
     })
@@ -60,7 +60,7 @@ statesJson.forEach((state, index) => {
 //     })
 
 //     const slicedArray = sortedArray.slice(0,5)
-    
+
 //     return slicedArray
 // }
 
@@ -85,7 +85,7 @@ statesJson.forEach((state, index) => {
 //     })
 
 //     const slicedArray = sortedArray.slice(0,5)
-    
+
 //     return slicedArray
 // }
 
@@ -102,11 +102,11 @@ const checkLengthNameAndOrderByAlphabetic = (dataStatesAndCities) => {
         allCities.cities.forEach(eachCities => {
             let citiesParsed = JSON.parse(eachCities)
 
-            allCitiesAndName.splice(index, 0, {UF: allCities.state, nameLength: citiesParsed.Nome.length, name: citiesParsed.Nome })
+            allCitiesAndName.splice(index, 0, { UF: allCities.state, nameLength: citiesParsed.Nome.length, name: citiesParsed.Nome })
         })
     })
 
-    const sortedCitiesName =  allCitiesAndName.sort(function(a,b) {
+    const sortedCitiesName = allCitiesAndName.sort(function (a, b) {
         return b.nameLength - a.nameLength
     })
 
@@ -114,7 +114,7 @@ const checkLengthNameAndOrderByAlphabetic = (dataStatesAndCities) => {
     return allCitiesAndName
 
     // sortedCitiesName.forEach(element =>{
-        
+
     // })
     // return  sortedCitiesName
 }

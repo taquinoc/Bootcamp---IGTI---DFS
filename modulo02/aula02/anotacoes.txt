@@ -16,5 +16,9 @@ Aula 2.1.3 NodeJS
 Event Loop? O que é o event loop?
 
     Baseado em eventos, tudo que acontece como eventos
+    Event loop é um loop infinito, que a cada iteração verifica os novos eventos.
+
+
+
 
 
